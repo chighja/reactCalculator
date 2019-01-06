@@ -7,6 +7,7 @@ import {
   decrementBy,
   setTo
 } from '../store/actions';
+import './counter.css';
 
 class Counter extends React.Component {
   incrementCounter = () => {
@@ -49,7 +50,7 @@ class Counter extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="counterBox">
         <div>
           <button onClick={this.decrementByFive}>-5</button>
           <button onClick={this.decrementByTwo}>-2</button>
