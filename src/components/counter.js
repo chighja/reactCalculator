@@ -52,18 +52,36 @@ class Counter extends React.Component {
     return (
       <div className="counterBox">
         <div className="basicBtns">
-          <button onClick={this.decrementByFive}>-5</button>
-          <button onClick={this.decrementByTwo}>-2</button>
-          <button onClick={this.decrementCounter}>-1</button>
-          <p className="countNum">{this.props.currentCount}</p>
-          <button onClick={this.incrementCounter}>+1</button>
-          <button onClick={this.incrementByTwo}>+2</button>
-          <button onClick={this.incrementByFive}>+5</button>
+          <button className="mainTxt btn" onClick={this.decrementByFive}>
+            -5
+          </button>
+          <button className="mainTxt btn" onClick={this.decrementByTwo}>
+            -2
+          </button>
+          <button className="mainTxt btn" onClick={this.decrementCounter}>
+            -1
+          </button>
+          <p className="countTxt">{this.props.currentCount}</p>
+          <button className="mainTxt btn" onClick={this.incrementCounter}>
+            +1
+          </button>
+          <button className="mainTxt btn" onClick={this.incrementByTwo}>
+            +2
+          </button>
+          <button className="mainTxt btn" onClick={this.incrementByFive}>
+            +5
+          </button>
         </div>
         <div>
-          <button onClick={this.setTo100}>Set to 100</button>
-          <button onClick={this.setTo0}>Set to 0</button>
-          <button onClick={this.setToRandom}>Set to random</button>
+          <button className="mainTxt btn" onClick={this.setTo100}>
+            Set to 100
+          </button>
+          <button className="mainTxt btn" onClick={this.setTo0}>
+            Set to 0
+          </button>
+          <button className="mainTxt btn" onClick={this.setToRandom}>
+            Set to random
+          </button>
         </div>
       </div>
     );
