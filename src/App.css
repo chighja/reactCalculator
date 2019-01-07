@@ -1,4 +1,6 @@
 * {
+  box-sizing: border-box;
+  margin: 0;
   background-color: #191970;
   color: #fffafa;
   font-family: 'Merriweather', serif;
