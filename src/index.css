@@ -2,10 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #191970;
   color: #fffafa;
   font-family: 'Space Mono', monospace;
   text-align: center;
+}
+
+body {
+  background-color: #191970;
 }
 
 .headTxt {
@@ -31,6 +34,7 @@
   padding: 0.5em;
   outline: none;
   border-radius: 3px;
+  background-color: #191970;
   box-shadow: 1px 2px 10px #000000;
 }
 

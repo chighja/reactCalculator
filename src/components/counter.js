@@ -51,6 +51,9 @@ class Counter extends React.Component {
   render() {
     return (
       <div className="counterBox">
+        <div className="count">
+          <p className="countTxt">{this.props.currentCount}</p>
+        </div>
         <div className="basicBtns">
           <button className="mainTxt btn" onClick={this.decrementByFive}>
             -5
@@ -61,7 +64,6 @@ class Counter extends React.Component {
           <button className="mainTxt btn" onClick={this.decrementCounter}>
             -1
           </button>
-          <p className="countTxt">{this.props.currentCount}</p>
           <button className="mainTxt btn" onClick={this.incrementCounter}>
             +1
           </button>
